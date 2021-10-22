@@ -1,0 +1,154 @@
+{% load static %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins&display=swap" rel="stylesheet">
+
+
+<div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-24 ">
+
+    <!-- Card -->
+    <div class=" text-center flex flex-col relative bg-transparent group shadow-lg border border-blue-500 rounded-lg">
+        <!-- Image -->
+        <div class="relative h-60  rounded-t-md ">
+            <div class="flex flex-col w-full items-center justify-between  px-6 pt-6">
+
+                <div class="bg-cover bg-center bg-no-repeat w-32 h-32 rounded-full shadow-md"
+                    style="background-image: url({% static 'images/profile.jpg' %}) "></div>
+
+                <!--
+                <img src=" {% static 'images/Instagram.svg' %}" class="w-12 h-12" alt="">-->
+
+            </div>
+            <h1 class="text-black mt-3 text-xl">kyliejenner</h1>
+            
+        </div>
+
+        <!-- Info text -->
+        <div class="bg-white flex flex-col rounded-b-2xl z-10 relative px-3 pb-4  gap-y-2">
+            <p class=" font-Poppins font-semibold text-xl"><span
+                    class="font-lora font-thin text-sm text-gray-500">подписчиков</span> 300 тыс. </p>
+            <p class=""><span class="font-lora font-thin text-sm text-gray-500">лайков</span> 200 тыс. </p>
+            <p>Подписчики </p>
+            <a href="#">
+                <div
+                    class="mt-3 py-2 px-4 mx-auto text-black bg-white rounded-md border-2 border-blue-400  hover:text-white hover:bg-blue-400   w-3/4 active:text-white active:bg-veryyellows">
+                    Связаться</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 2-->
+    <div class=" text-center flex flex-col relative bg-transparent group shadow-lg">
+        <!-- Image -->
+        <div class="relative h-60  bg-veryyellow  rounded-t-md group-hover:from-veryblue group-hover:to-verypink">
+            <div class="flex flex-row w-full items-center justify-between  px-6 pt-6">
+
+                <div class="bg-cover bg-center bg-no-repeat w-24 h-24 rounded-full"
+                    style="background-image: url({% static 'images/profile.jpg' %}) "></div>
+
+                <img src=" {% static 'images/Tiktok.svg' %}" class="w-12 h-12" alt="">
+
+            </div>
+            <h1 class="text-black mt-3 text-xl">kyliejenner</h1>
+            <div class="custom-shape-divider-bottom-1626182177">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Info text -->
+        <div class="bg-white flex flex-col rounded-b-2xl z-10 relative px-3 pb-4  gap-y-2">
+            <p class=" font-Poppins font-semibold text-xl"><span
+                    class="font-lora font-thin text-sm text-gray-500">подписчиков</span> 300 тыс. </p>
+            <p class=""><span class="font-lora font-thin text-sm text-gray-500">лайков</span> 200 тыс. </p>
+            <p>Подписчики </p>
+            <a href="#">
+                <div
+                    class="mt-3 py-2 px-4 mx-auto text-black bg-white rounded-md border-2 border-veryyellow  hover:text-white hover:bg-veryyellow w-3/4">
+                    Связаться</div>
+            </a>
+        </div>
+    </div>
+
+    <!--Card 3-->
+    <div class=" text-center flex flex-col relative bg-transparent group shadow-lg">
+        <!-- Image -->
+        <div class="relative h-60  bg-veryyellow  rounded-t-md group-hover:from-veryblue group-hover:to-verypink">
+            <div class="flex flex-row w-full items-center justify-between  px-6 pt-6">
+
+                <div class="bg-cover bg-center bg-no-repeat w-24 h-24 rounded-full"
+                    style="background-image: url({% static 'images/profile.jpg' %}) "></div>
+
+                <img src=" {% static 'images/Tiktok.svg' %}" class="w-12 h-12" alt="">
+
+            </div>
+            <h1 class="text-black mt-3 text-xl">kyliejenner</h1>
+            <div class="custom-shape-divider-bottom-1626182177">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Info text -->
+        <div class="bg-white flex flex-col rounded-b-2xl z-10 relative px-3 pb-4  gap-y-2">
+            <p class=" font-Poppins font-semibold text-xl"><span
+                    class="font-lora font-thin text-sm text-gray-500">подписчиков</span> 300 тыс. </p>
+            <p class=""><span class="font-lora font-thin text-sm text-gray-500">лайков</span> 200 тыс. </p>
+            <p>Подписчики </p>
+            <a href="#">
+                <div
+                    class="mt-3 py-2 px-4 mx-auto text-black bg-white rounded-md border-2 border-veryyellow  hover:text-white hover:bg-veryyellow w-3/4">
+                    Связаться</div>
+            </a>
+        </div>
+    </div>
+
+    <div class=" text-center flex flex-col relative bg-transparent">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-gray-500 to-black shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <!-- Image -->
+        <div class="relative h-60 bg-blue-700 rounded-t-md">
+            <div class="flex flex-row w-full items-center justify-between  px-6 pt-6">
+
+                <div class="bg-cover bg-center bg-no-repeat w-24 h-24 rounded-full"
+                    style="background-image: url({% static 'images/profile.jpg' %}) "></div>
+
+                <img src=" {% static 'images/Tiktok.svg' %}" class="w-12 h-12" alt="">
+
+            </div>
+            <h1 class="text-white mt-3">kyliejenner</h1>
+            <div class="custom-shape-divider-bottom-1626182177">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Info text -->
+        <div class="bg-white flex flex-col rounded-b-2xl z-10 relative px-3 pb-4  gap-y-2">
+            <p class=" font-Poppins font-semibold text-xl"><span
+                    class="font-lora font-thin text-sm text-gray-500">подписчиков</span> 300 тыс. </p>
+            <p class=""><span class="font-lora font-thin text-sm text-gray-500">лайков</span> 200 тыс. </p>
+            <p>Подписчики </p>
+            <a href="#">
+                <div
+                    class="mt-3 py-2 px-4 mx-auto text-white rounded-md hover:text-black border-2 hover:border-black bg-black hover:bg-white w-3/4">
+                    Связаться</div>
+            </a>
+        </div>
+    </div>
+
+</div>

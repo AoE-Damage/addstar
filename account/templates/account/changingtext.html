@@ -1,0 +1,65 @@
+<style>
+    .ch-text-wrapper {
+        display: inline-flex;
+    }
+
+    .static-text {
+        font-size: 60px;
+    }
+
+    .dynamic-texts {
+        margin-left: 15px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+    }
+
+    .dynamic-texts li {
+        font-weight: 500;
+        position: relative;
+        font-size: 60px;
+        list-style: none;
+        color: #FC6D6D;
+        top: 0;
+        animation: slide 6s steps(4) infinite;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -360px;
+        }
+    }
+
+
+    .dynamic-texts li span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid #FC6D6D;
+        background: #fff;
+        animation: typing 1.5s steps(10) infinite;
+    }
+
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+
+        }
+    }
+</style>
+
+
+<div class="ch-text-wrapper mt-10">
+    <div class="static-text text-black">Addstar- это:</div>
+    <ul class="dynamic-texts">
+        <li><span>Надежность</span></li>
+        <li><span>Крутость</span></li>
+        <li><span>Developer</span></li>
+        <li><span>Designer</span></li>
+
+    </ul>
+
+</div>

@@ -1,0 +1,176 @@
+{% extends 'account/base.html' %}
+{% load static %} {% block content %}
+<!-- Hero Section-->
+
+<div id="mobilenav" class="nav-menu h-screen w-full fixed z-10 top-0 left-0 bg-blue-800 hidden">
+  <ul class="
+ flex flex-col items-center justify-center mt-10
+  gap-12
+  uppercase
+  text-lg
+">
+    <li class="
+    cursor-pointer
+    text-white
+    border-b-2 border-transparent
+    hover:border-white
+  ">
+      <a href="{% url 'search' %}">База блогеров</a>
+
+    </li>
+    <li class="cursor-pointer text-white border-b-2 border-transparent
+    hover:border-white">Рекламодателям</li>
+    <li class="cursor-pointer text-white border-b-2 border-transparent
+    hover:border-white">Конакты</li>
+    <li onclick="closenav()">
+      <i class="fas fa-times fa-2x text-white cursor-pointer"></i>
+    </li>
+  </ul>
+</div>
+<section class="
+    relative
+    px-0
+    md:px-20
+    mt-0
+    w-screen
+    bg-gradient-to-r
+    from-veryblue
+    via-verypink
+    to-veryyellow
+    animate__animated animate__backInLeft
+  ">
+  <!-- Header -->
+  <nav class="container flex sm:flex-row items-center py-4 mt-0">
+    <h1 class="font-play text-white font-semibold text-2xl text-left md:text-5xl">
+      <a href="{% url 'home' %}">addstar</a>
+    </h1>
+
+    <div class="flex sm:hidden flex-1 justify-end items-center mr-3" onclick="opennav()">
+      <i class="text-2xl fas fa-bars text-white"></i>
+    </div>
+
+    <ul class="
+    hidden sm:flex flex-1 items-end justify-end p-3
+     gap-12
+     uppercase
+     text-sm
+   ">
+      <li class="
+       cursor-pointer
+       text-white
+       border-b-2 border-transparent
+       hover:border-white
+     ">
+        <a href="{% url 'search' %}">База блогеров</a>
+
+      </li>
+      <li class="cursor-pointer text-white border-b-2 border-transparent
+       hover:border-white"><a href="#pros">Рекламодателям</a> </li>
+      <li class="cursor-pointer text-white border-b-2 border-transparent
+       hover:border-white">Конакты</li>
+
+    </ul>
+
+
+
+
+
+  </nav>
+
+  <!-- Title -->
+  <div class="
+      flex flex-col-reverse
+      items-center
+      justify-center
+      md:flex-row
+      px-1
+      md:px-6
+    ">
+    <!-- text -->
+    <div class="flex flex-1 mb-10">
+      <div class="flex flex-col items-start justify-start mx-3">
+        <h1 class="text-white text-4xl sm:text-6xl" id='test' onscroll="showAnimation()">Вместе с нами</h1>
+        <p class="text-white text-xl mt-5 sm:text-2xl">
+          поиск блогеров для Ваших рекламных кампаний и мероприятий становится
+        </p>
+        <p class="
+            border-b
+            text-white text-xl
+            sm:text-2xl
+            border-white
+            animate__animated animate__tada animate__delay-3s
+          ">
+          простым и удобным.
+        </p>
+
+        <div class="flex flex-col items-start sm:flex-row">
+          <a href="#about" class="px-4 py-2 rounded-md bg-white mt-6 ">Найти блогера</a>
+
+          <a href="#about" class="px-4 py-2 rounded-md bg-gray-200 mt-6  ml-3">Подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Some image -->
+
+    <div class="flex-1">
+      <img id="svgwhite" src=" {% static 'images/social-media-marketing-4549.png' %} " class="mb-4 sm:mb-28 sm:mt-4"
+        style="filter: invert(100%)" alt="" />
+    </div>
+  </div>
+
+  <div class="custom-shape-divider-bottom-1626190998">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Возможности работы. Описание для рекламодателей -->
+<section id="pros">{% include 'account/pros.html' %}</section>
+
+<section class="mt-10">{% include 'account/card.html' %}</section>
+
+<section class="bg-purple-700 text-white py-20 mt-16">
+  <div class="container">
+    <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+      <p class="uppercase font-light text-center">35,000+ ALREADY JOINED</p>
+      <h1 class="text-3xl text-center">
+        Stay up-to-date with what we are doing
+      </h1>
+      <div class="flex flex-col sm:flex-row gap-6 mt-8">
+        <input type="text" placeholder="Enter your email address" class="flex-1 px-2 py-3 rounded-md text-black" />
+        <button type="button" class="
+            bg-red-500
+            text-white
+            rounded-md
+            py-3
+            px-7
+            uppercase
+            hover:bg-bookmark-white hover:text-black
+          ">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer -->
+<script>
+  function opennav() {
+    document.querySelector('#mobilenav').classList.remove('hidden')
+  }
+
+  function closenav() {
+    document.querySelector('#mobilenav').classList.add('hidden')
+  }
+
+  function showAnimation() {
+    document.querySelector('#test').classList.add('animate__animated');
+    document.querySelector('#test').classList.add('animate__tada');
+  }
+</script>
+
+
+{% endblock content %}

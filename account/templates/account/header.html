@@ -1,0 +1,19 @@
+    {% load static %}
+    <header class="w-screen bg-gradient-to-r from-veryblue via-verypink to-veryyellow">
+        <nav class="container flex items-center py-4 mt-0">
+            <h1 class="font-play text-white font-semibold text-2xl text-left md:text-5xl "><a href="{% url 'home' %}">addstar</a></h1>
+            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-xs">
+                <li class="cursor-pointer text-white border-b-2 border-transparent hover:border-white">
+                    <a href=" {% url 'home' %} ">Главная</a>
+                </li>
+                <li class="cursor-pointer text-white border-b-2 border-transparent hover:border-white">
+               <a href=" {% url 'home' %}#pros">Рекламодателям</a> 
+                </li>
+                <li class="cursor-pointer text-white border-b-2 border-transparent hover:border-white"><a href="contact">Конакты</a> </li>
+                
+            </ul>
+            <div class="flex sm:hidden flex-1 justify-end items-center ">
+                <i class=" text-2xl fas fa-bars text-white"></i>
+            </div>
+        </nav>
+    </header>
